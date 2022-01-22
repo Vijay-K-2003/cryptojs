@@ -1,0 +1,23 @@
+{
+  "name": "cryptojs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vijay-K-2003/cryptojs.git"
+  },
+  "author": "Vijay Karanjkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vijay-K-2003/cryptojs/issues"
+  },
+  "homepage": "https://github.com/Vijay-K-2003/cryptojs#readme",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "nodemon": "^2.0.15"
+  }
+}
