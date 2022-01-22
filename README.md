@@ -1,6 +1,10 @@
 # Learning to use crypto-js
 
 ```
+npm install crypto-js
+```
+
+```
 const CryptoJS = require('crypto-js');
 ```
 > MD5
