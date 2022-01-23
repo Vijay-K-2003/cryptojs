@@ -17,3 +17,10 @@ const CryptoJS = require('crypto-js');
 
 > RIPEMD160
 
+> Using toString
+
+> Progressive Hashing
+
+> HMAC
+
+> Progressive HMAC
