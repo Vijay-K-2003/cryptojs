@@ -55,3 +55,23 @@ sha256.update("K");
 var hash_sha256_prog = sha256.finalize();
 console.log("hash_sha256 : " + hash_sha256_prog);
 
+// Keyed-hash message authentication codes (HMAC)
+var hash_HMAC_MD5 = CryptoJS.HmacMD5("Name", "This is Secret");
+console.log("hash_HMAC_MD5 : " + hash_HMAC_MD5);
+
+var hash_HMAC_SHA1 = CryptoJS.HmacSHA1("Name", "This is Secret");
+console.log("hash_HMAC_SHA1 : " + hash_HMAC_SHA1);
+
+var hash_HMAC_SHA256 = CryptoJS.HmacSHA256("Name", "This is Secret");
+console.log("hash_HMAC_SHA256 : " + hash_HMAC_SHA256);
+
+var hash_HMAC_SHA512 = CryptoJS.HmacSHA512("Name", "This is Secret");
+console.log("hash_HMAC_SHA512 : " + hash_HMAC_SHA512);
+
+// Progressive HMAC
+var hmac = CryptoJS.algo.HMAC.create(CryptoJS.algo.SHA256, "This is Secret");
+hmac.update("Name");
+hmac.update("Middle Name");
+hmac.update("Last Name");
+var hash_HMAC_Prog = hmac.finalize();
+console.log("hash_HMAC_Prog : " + hash_HMAC_Prog);
