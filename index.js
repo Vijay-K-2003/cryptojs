@@ -41,3 +41,17 @@ console.log(message + "\nhash_SHA_3_224-> " + hash_SHA_3_224);
 // RIPEMD-160 Hashing
 var hash_RIPEMD160 = CryptoJS.RIPEMD160(message);
 console.log(message + "\nhash_RIPEMD160-> " + hash_RIPEMD160);
+
+// Converting toString Hex etc.
+console.log("hash_SHA_256 To Base64 : " + hash_SHA_256.toString(CryptoJS.enc.Base64));
+console.log("hash_SHA_256 To Hex : "+hash_SHA_256.toString(CryptoJS.enc.Hex));
+console.log("hash_SHA_256 To Base64url : "+hash_SHA_256.toString(CryptoJS.enc.Base64url));
+
+// Progressive Hashing
+var sha256 = CryptoJS.algo.SHA256.create();
+sha256.update("Vijay");
+sha256.update("J");
+sha256.update("K");
+var hash_sha256_prog = sha256.finalize();
+console.log("hash_sha256 : " + hash_sha256_prog);
+
